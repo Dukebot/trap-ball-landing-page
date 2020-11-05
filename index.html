@@ -5,6 +5,11 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
+
+	<!-------------------------------------------------------------------------------->
+	<!--									HEAD                                    -->
+	<!-------------------------------------------------------------------------------->
+	
 	<head>
 		<title>Trap Ball</title>
 		<meta charset="utf-8" />
@@ -12,17 +17,25 @@
 		
 		<!-- Metadata for the web to be found -->
 		<meta name="description" content="Free to play videogame where you've to dodge the traps and make it to the end of the level!" />
-		<meta name="keywords" content="trapball, trap-ball, trap_ball, trap ball, free, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce" />
+		<meta name="keywords" content="dukebot, trapball, trap-ball, trap_ball, trap ball, free, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce" />
 		
 		<!-- Industrious Template CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Custom CSS Styles -->
-		<link rel="stylesheet" href="style.css" /> 
+		<link rel="stylesheet" href="custom.css" /> 
 	</head>
+	
+	<!-------------------------------------------------------------------------------->
+	<!--									BODY                                    -->
+	<!-------------------------------------------------------------------------------->
+	
 	<body class="is-preload">
 
-		<!-- Header -->
+		<!-------------------------------------------------------------------------------->
+		<!--								HEADER                                    	-->
+		<!-------------------------------------------------------------------------------->
+		
 		<header id="header">
 			<a class="logo" href="index.html">Trap Ball</a>
 			<nav>
@@ -40,7 +53,10 @@
 			</ul>
 		</nav>
 
-		<!-- Banner -->
+		<!-------------------------------------------------------------------------------->
+		<!--								BANNER                                    	-->
+		<!-------------------------------------------------------------------------------->
+		
 		<section id="banner">
 			<div class="inner">
 				<h1>Trap Ball</h1>
@@ -50,7 +66,10 @@
 			<video autoplay loop muted playsinline src="images/banner.mp4"></video>
 		</section>
 
-		<!-- Features -->
+		<!-------------------------------------------------------------------------------->
+		<!--								FEATURES                                    -->
+		<!-------------------------------------------------------------------------------->
+
 		<!-- The icons for the font awesome can be found here https://fontawesome.com/v4.7.0/icons/ -->
 		<section class="wrapper">
 			<div class="inner">
@@ -121,10 +140,11 @@
 		<!-- FIXME: Here is leaving too much blank space, probably has something to do with the CSS. -->
 		<!--------------------------------------------------------------------------------------------->
 
-		<!-- Image Carousel -->
-		<!-- To hide element add: style="display:none" -->
-		<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-		<section class="wrapper" style="display:none"> 
+		<!--------------------------------------------------------------------------------------------->
+		<!-- 		IMAGE CAROUSEL (https://www.w3schools.com/howto/howto_js_slideshow.asp) 	 	 -->
+		<!--------------------------------------------------------------------------------------------->
+
+		<section class="wrapper" style="display:none">
 			<div class="inner">
 				<header class="special">
 					<h2>Screenshoots</h2>
@@ -174,7 +194,10 @@
 			</div>
 		</section>
 
-		<!-- CTA -->
+		<!--------------------------------------------------------------------------------------------->
+		<!-- 										CTA 	 									 	 -->
+		<!--------------------------------------------------------------------------------------------->
+		
 		<section id="cta" class="wrapper">
 			<div class="inner">
 				<h2>Why Trap Ball is different?</h2>
@@ -182,7 +205,10 @@
 			</div>
 		</section>
 
-		<!-- Testimonials -->
+		<!--------------------------------------------------------------------------------------------->
+		<!-- 									TESTIMONIALS 	 									 -->
+		<!--------------------------------------------------------------------------------------------->
+		
 		<section class="wrapper">
 			<div class="inner">
 				<header class="special">
@@ -233,7 +259,10 @@
 			</div>
 		</section>
 
-		<!-- Footer -->
+		<!-------------------------------------------------------------------------------->
+		<!--								FOOTER                                    	-->
+		<!-------------------------------------------------------------------------------->
+		
 		<footer id="footer">
 			<div class="inner">
 				<div class="content">
@@ -271,7 +300,9 @@
 			</div>
 		</footer>
 
-		<!---------- Scripts ---------->
+		<!-------------------------------------------------------------------------------->
+		<!--								SCRIPTS                                    	-->
+		<!-------------------------------------------------------------------------------->
 
 		<!-- Industried template scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -280,46 +311,19 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
-		<!-- Structured Data (documentation: https://schema.org/docs/schemas.html) -->
-		<script type="application/1d+json">
+		<!-- Custom Scripts -->
+		<script src="custom.js"></script>
+
+		<!-- Structured Data (https://schema.org/docs/schemas.html) -->
+		<script type="application/ld+json">
 			{
-				"@context": "https://schema.org",
-				"@type": "Product",
-				"name": "Trap Ball",
+			  "@context": "https://schema.org",
+			  "@type": "CreativeWork",
+			  "author": "Daniel (Dukebot) Ferrer Gallegos",
+			  "contentRating": "PG-13",
+			  "image": "images/banner.jpg",
+			  "name": "Trap Ball"
 			}
 		</script>
-
-		<!-- Image carousel -->
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			// Next/previous controls
-			function plusSlides(n) {
-				showSlides(slideIndex += n); 
-			}
-
-			// Thumbnail image controls
-			function currentSlide(n) { 
-				showSlides(slideIndex = n); 
-			}
-
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = slides.length}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				dots[slideIndex-1].className += " active";
-			}
-		</script>
-
 	</body>
 </html>
