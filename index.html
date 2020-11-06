@@ -18,7 +18,7 @@
 		<!-- Metadata for the web to be found by the google search engine -->
 		<meta name="robots" content="index, follow" />
 		<meta name="description" content="Free to play videogame where you've to dodge the traps and make it to the end of the level!" />
-		<meta name="keywords" content="dukebot, trapball, trap-ball, trap_ball, trap ball, free, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce" />
+		<meta name="keywords" content="dukebot, trapball, trap-ball, trap_ball, trap ball, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce" />
 		
 		<!-- Industrious Template CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,7 +27,83 @@
 		<link rel="stylesheet" href="custom.css" /> 
 
 		<!-- Structured Data (https://schema.org/docs/schemas.html) -->
-		<script src="trap_ball.json" type="application/ld+json"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebPage",
+				
+				"name": "Trap Ball Landing Page"
+				"about": "Page to promote the videogame Trap Ball.",
+				"abstract": "Page to promote the videogame Trap Ball.",
+
+				"keywords": "dukebot, trapball, trap-ball, trap_ball, trap ball, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce",
+				"primaryImageOfPage": {
+					@type: "ImageObject",
+					"embedUrl": "images/banner.jpg",
+					"caption": "Trap Ball screenshoot",
+					"representativeOfPage": "true"
+				},
+				"significantLink": "https://dukebot.itch.io/trap-ball",
+				"lastReviewed": "2020-11-06"
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "VideoGame",
+				
+				"name": "Trap Ball",
+				"version": "0.4",
+				"gamePlatform": "Android, PC, Web",
+				"playMode": "Signe Player",
+
+				"keywords": "dukebot, trapball, trap-ball, trap_ball, trap ball, free to play, game, videogame, arcade, platformer, 2D, action, ball, bounce",
+				"about": "Free to play videogame where you've to dodge the traps and make it to the end of the level.",
+				"abstract": "Free to play videogame where you've to dodge the traps and make it to the end of the level.",
+
+				"video": "images/banner.mp4",
+				"image": "images/banner.jpg",
+				"thumbnailUrl": "images/banner.jpg",
+				"trailer": "images/banner.mp4",
+
+				"dateCreated": "2020-11-06",
+				"dateModified": "2020-11-06",
+				"datePublished": "2021-01-01",
+
+				"creativeWorkStatus": "in development",
+				"contentRating": "PG-13",
+				"accessMode": "auditory, tactile, textual, visual",
+				"isAccessibleForFree": "true",
+				"inLanguage": "EN",
+				
+				"downloadUrl": "https://dukebot.itch.io/trap-ball",
+				"installUrl": "https://dukebot.itch.io/trap-ball",
+				"discussionUrl": "https://dukebot.itch.io/trap-ball",
+				
+				"license": "",
+				"musicBy": "https://www.freesfx.co.uk/",
+				
+				"creator": {
+					"@type": "Person",
+					"name": "Daniel Ferrer Gallegos (Dukebot)",
+					"birthDate": "1990-01-01",
+					"birthPlace": {
+						"@type": "Place",
+						"address": "Palma de Mallorca, Spain"
+					}
+				},
+				"director":   { "@type": "Person", "name": "Daniel Ferrer Gallegos (Dukebot)" },
+				"producer":   { "@type": "Person", "name": "Daniel Ferrer Gallegos (Dukebot)" },
+				"publisher":  { "@type": "Person", "name": "Daniel Ferrer Gallegos (Dukebot)" },
+				"maintainer": { "@type": "Person", "name": "Daniel Ferrer Gallegos (Dukebot)" },
+				"sponsor":    { "@type": "Person", "name": "Daniel Ferrer Gallegos (Dukebot)" },
+				
+				"locationCreated": { 
+					"@type": "Place", 
+					"address": "Palma de Mallorca, Spain" 
+				}
+			}
+		</script>
 	</head>
 	
 	<!-------------------------------------------------------------------------------->
