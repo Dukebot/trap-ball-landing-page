@@ -24,6 +24,32 @@
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="custom.css" /> 
+
+		<!-- Structured Data (https://schema.org/docs/schemas.html) -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "CreativeWork",
+				"name": "Trap Ball"
+				"image": "images/banner.jpg",
+				"about": "",
+				"abstract": "Free to play videogame where you've to dodge the traps and make it to the end of the level.",
+				"contentRating": "PG-13",
+				"accessMode": "auditory, tactile, textual, visual",
+				"author": {
+					"@type": "Person",
+					"name": "Daniel Ferrer Gallegos (Dukebot)",
+					"birthDate": "1990-01-01",
+					"birthPlace": {
+						"@type": "Place",
+						"address": "Palma de Mallorca, Spain"
+					}
+				},
+				"dateCreated": "2020-10-01",
+				"dateModified": "2020-11-01",
+				"datePublished": "2021-01-01"
+			}
+		</script>
 	</head>
 	
 	<!-------------------------------------------------------------------------------->
@@ -314,17 +340,5 @@
 
 		<!-- Custom Scripts -->
 		<script src="custom.js"></script>
-
-		<!-- Structured Data (https://schema.org/docs/schemas.html) -->
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org",
-			  "@type": "CreativeWork",
-			  "author": "Daniel (Dukebot) Ferrer Gallegos",
-			  "contentRating": "PG-13",
-			  "image": "images/banner.jpg",
-			  "name": "Trap Ball"
-			}
-		</script>
 	</body>
 </html>
