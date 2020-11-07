@@ -2359,7 +2359,7 @@ ul.icons {
   #footer .copyright {
     border-top: 1px solid;
     font-size: 0.8rem;
-    opacity: 0.75; /*default = 0.5*/
+    opacity: 1; /*default = 0.5*/
     padding: 2rem 0;
     text-align: center; }
   @media screen and (max-width: 1280px) {
